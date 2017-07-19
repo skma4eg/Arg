@@ -113,8 +113,8 @@ function loadmore() {
 }
 var postperpage = $('.blog-pager-older-link')['length'] == 1 ? $('article')['length'] : $('.blog-pager-newer-link')['attr']('href')['slice']($('.blog-pager-newer-link')['attr']('href')['indexOf']('max-results=') + 12)['substr'](0, 1),
     numshowpage = 3,
-    upPageWord = ' <i class=\'fa fa-chevron-right\'></i> ',
-    downPageWord = ' <i class=\'fa fa-chevron-left\'></i> ',
+    upPageWord = ' <i class=\'fa fa-chevron-left\'></i> ',
+    downPageWord = ' <i class=\'fa fa-chevron-right\'></i> ',
     home_page = '/',
     urlactivepage = location['href'],
     nopage, jenis, nomerhal, lblname1;

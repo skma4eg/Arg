@@ -102,10 +102,10 @@ function finddatepost(_0xb700x9) {
 function loadmore() {
     var _0xb700x9 = $('#blog-pager'),
         _0xb700x2 = $('.blog-posts');
-    _0xb700x9['find']('#blog-pager-newer-link')['remove'](), _0xb700x9['append']('<div id="loadmore"><a href="' + _0xb700x9['find']('#blog-pager-older-link a')['attr']('href') + '" title="Load More">+ Load More</a></div>'), _0xb700x9['on']('click', '#loadmore a', function() {
+    _0xb700x9['find']('#blog-pager-newer-link')['remove'](), _0xb700x9['append']('<div id="loadmore"><a href="' + _0xb700x9['find']('#blog-pager-older-link a')['attr']('href') + '" title="عرض المزيد من المواضيع">+ عرض المزيد</a></div>'), _0xb700x9['on']('click', '#loadmore a', function() {
         return $['get'](this['href'], {}, function(_0xb700xd) {
             var _0xb700x5 = $(_0xb700xd)['find']('.post')['length'] ? $(_0xb700xd) : $('<div></div>');
-            _0xb700x2['append'](_0xb700x5['find']('.blog-posts')['html']()), lazyload(), void(0) == _0xb700x5['find']('#blog-pager-older-link a')['attr']('href') ? _0xb700x9['html']('') : _0xb700x9['html']('<div id="loadmore"><a href="' + _0xb700x5['find']('#blog-pager-older-link a')['attr']('href') + '" title="Load More">+ Load More</a></div>')
+            _0xb700x2['append'](_0xb700x5['find']('.blog-posts')['html']()), lazyload(), void(0) == _0xb700x5['find']('#blog-pager-older-link a')['attr']('href') ? _0xb700x9['html']('') : _0xb700x9['html']('<div id="loadmore"><a href="' + _0xb700x5['find']('#blog-pager-older-link a')['attr']('href') + '" title="عرض المزيد من المواضيع">+ عرض المزيد</a></div>')
         }, 'html')['fail'](function() {
             _0xb700x9['remove']()
         }), $(this)['replaceWith']('<img src="https://3.bp.blogspot.com/-BzBPPgHB5B0/VuS_U1eO7gI/AAAAAAAAAQs/LQrjcLbYVkIVslkwbWKxgb7nOIyHLkwBg/s1600/301.gif" style="padding: 10px 20px;">'), !1
@@ -113,8 +113,8 @@ function loadmore() {
 }
 var postperpage = $('.blog-pager-older-link')['length'] == 1 ? $('article')['length'] : $('.blog-pager-newer-link')['attr']('href')['slice']($('.blog-pager-newer-link')['attr']('href')['indexOf']('max-results=') + 12)['substr'](0, 1),
     numshowpage = 3,
-    upPageWord = ' <i class=\'fa fa-chevron-left\'></i> ',
-    downPageWord = ' <i class=\'fa fa-chevron-right\'></i> ',
+    upPageWord = ' <i class=\'fa fa-chevron-right\'></i> ',
+    downPageWord = ' <i class=\'fa fa-chevron-left\'></i> ',
     home_page = '/',
     urlactivepage = location['href'],
     nopage, jenis, nomerhal, lblname1;

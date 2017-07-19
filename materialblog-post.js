@@ -10,19 +10,6 @@
         $('a.blog-pager-newer-link')['text']('\xAB' + _0x4f83x1)
     })
 });
-var randomRelatedIndex, showRelatedPost;
-! function(_0x4f83x1, _0x4f83xb, _0x4f83xc) {
-    var _0x4f83xd = {
-            widgetTitle: '<h4 class=\'judul-bawah\'><span>Related Post</span></h4>',
-            numPosts: realated,
-            summaryLength: 370,
-            titleLength: 'auto',
-            thumbnailSize: 200,
-            noImage: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAA3NCSVQICAjb4U/gAAAADElEQVQImWOor68HAAL+AX7vOF2TAAAAAElFTkSuQmCC',
-            containerId: 'related-post',
-            newTabLink: !1,
-            callBack: function() {}
-        },
         _0x4f83xe = function(_0x4f83x1) {
             var _0x4f83xd = _0x4f83xb['createElement']('script');
             _0x4f83xd['type'] = 'text/javascript', _0x4f83xd['src'] = _0x4f83x1, _0x4f83xc['appendChild'](_0x4f83xd)
